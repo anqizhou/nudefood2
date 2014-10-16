@@ -1,2 +1,43 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+<header>
+  <h2>Thoughtful Food</h2>
+</header>
+
+<!-- Container Section -->
+<div class="jumbotron">
+  <!-- Title  -->
+  <div class="front_page_title">
+    <h1>Enjoy your meal time</h1>
+  </div>
+
+  <!-- Timing box -->
+  <div class="front_page_delivery_time">
+    <div class="front_page_delivery_time_text">Get your meal delivered by <%=@timeFutureShow%></div>
+  </div>
+
+  <!-- Intro Paragraph -->
+  <div class="intro_section">
+    <h3>Quick - Curated - Healthy</h3>
+    <p>Your time is valuable.<br>That's why we bring you a special selection of healthy food quickly.<br>So that you can enjoy what really matters in life.</p>
+    <button type="button" class="btn btn-primary">Explore Now</button>
+  </div>
+
+  <!-- Login Section  -->
+  <div class="login_section">
+    <form class="form-signin" role="form">
+      <input type="email" class="form-control email_input_box" placeholder="Email address" required autofocus>
+      <input type="password" class="form-control password_input_box" placeholder="Password" required>
+      <button class="btn btn-lg btn-primary btn-block sign_up_btn" type="submit">Sign Up</button>
+      <button class="btn btn-lg btn-primary btn-block log_in_btn" type="submit">Log In</button>
+    </form>
+  </div>
+<!-- End of Container -->
+</div>
+
+<!-- Footer section -->
+<footer>
+  <div class="bot_pic"><img src="<%= asset_path('meal_1.jpg') %>"></div>
+  <div class="bot_pic"><img src="/assets/meal_2.jpg"></div>
+  <div class="bot_pic"><img src="/assets/meal_3.jpg"></div>
+  <div class="bot_pic"><img src="/assets/meal_4.jpg"></div>
+</footer>
