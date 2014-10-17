@@ -39,8 +39,8 @@
   <div class="row">
     <% [@foodItemAdventurous, @foodItemAsian, @foodItemWestern].each do |item| %>
       <div class="col-md-4">
-          <p><strong><%= item.name %></strong><br>
-          Cuisine:<%= item.cuisine %><br>
+          <a href="#"><strong><%= item.name %></strong></a>
+          <p>Cuisine:<%= item.cuisine %><br>
           Restaurant:<%= item.restaurant_name %><br>
           HKD<%= item.price %></p>
           <p>Harry gives it a <%= item.harrys_choice ? "THUMBS UP" : "THUMBS DOWN" %></p>
