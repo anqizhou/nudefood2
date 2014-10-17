@@ -34,10 +34,28 @@
 <!-- End of Container -->
 </div>
 
+<div class="recommendation">
+
+  <div class="row">
+    <% [@foodItemAdventurous, @foodItemAsian, @foodItemWestern].each do |item| %>
+      <div class="col-md-4">
+          <p><strong><%= item.name %></strong><br>
+          Cuisine:<%= item.cuisine %><br>
+          Restaurant:<%= item.restaurant_name %><br>
+          HKD<%= item.price %></p>
+          <p>Harry gives it a <%= item.harrys_choice ? "THUMBS UP" : "THUMBS DOWN" %></p>
+          <%= image_tag item.photo_path %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
 <!-- Footer section -->
-<footer>
+<!-- <footer>
   <div class="bot_pic"><img src="<%= asset_path('meal_1.jpg') %>"></div>
   <div class="bot_pic"><img src="/assets/meal_2.jpg"></div>
   <div class="bot_pic"><img src="/assets/meal_3.jpg"></div>
   <div class="bot_pic"><img src="/assets/meal_4.jpg"></div>
-</footer>
+</footer> -->
