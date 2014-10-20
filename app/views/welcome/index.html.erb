@@ -39,7 +39,7 @@
   <div class="row">
     <% [@foodItemAdventurous, @foodItemAsian, @foodItemWestern].each do |item| %>
       <div class="col-md-4">
-          <%= link_to(item.name, :controller => 'food_item', :action => 'show', :id => 'item.id') %>
+          <%= link_to(item.name, :controller => 'food_item', :action => 'show', :id => item.id) %>
 <!--           <a href="/food_item/show/<%= item.id %>"><strong><%= item.name %></strong></a> -->
           <p>Cuisine:<%= item.cuisine %><br>
           Restaurant:<%= item.restaurant_name %><br>
